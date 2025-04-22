@@ -5,5 +5,5 @@ console.log("hello");
 // git and remote
 // git status
 // git add .
-// git commit - m "message here"
+// git commit -m "message here"
 // git push
