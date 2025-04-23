@@ -10,6 +10,12 @@ console.log("hello");
 
 document.getElementById("button").onclick = addTask;
 
+document.getElementById("inputTask").addEventListener("keypress", function(event){
+    if(event.key === "Enter"){
+        addTask();
+    }
+})
+
 function addTask() {
     const newTask = document.createElement("li")
     const tasklist = document.getElementById("tasklist")
@@ -29,3 +35,4 @@ function deleteTask(newTask) {
         newTask.remove()
     }
 }
+
