@@ -8,6 +8,8 @@ console.log("hello");
 // git commit -m "message here"
 // git push
 
+document.getElementById("button").onclick = addTask;
+
 function addTask() {
     const newTask = document.createElement("li")
     const tasklist = document.getElementById("tasklist")
@@ -16,6 +18,8 @@ function addTask() {
     document.getElementById("inputTask").value = ""    // To make input section empty
     deleteTask(newTask)
 }
+
+
 
 function deleteTask(newTask) {
     const deleteBtn = document.createElement("button")
